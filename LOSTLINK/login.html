@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk | LostLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-brand-panel">
+      <a class="brand brand-light" href="login.html">
+        <span class="brand-icon"><i class="fa-solid fa-link"></i></span>
+        <span><strong>LostLink</strong><small>PKM-KC</small></span>
+      </a>
+      <div class="login-promo">
+        <span class="eyebrow eyebrow-yellow">SMART LOST & FOUND KAMPUS</span>
+        <h1>Barang hilang?<br><span>Temukan kembali.</span></h1>
+        <p>Tempat terpusat untuk melaporkan, mencari, dan menghubungkan barang hilang dengan pemiliknya di lingkungan kampus.</p>
+        <div class="promo-points">
+          <div><i class="fa-solid fa-magnifying-glass"></i><span>Pencarian barang lebih terarah</span></div>
+          <div><i class="fa-solid fa-wand-magic-sparkles"></i><span>Konsep pencocokan informasi</span></div>
+          <div><i class="fa-solid fa-handshake"></i><span>Verifikasi sebelum serah terima</span></div>
+        </div>
+      </div>
+      <div class="login-panel-decoration decoration-one"></div>
+      <div class="login-panel-decoration decoration-two"></div>
+    </section>
+    <section class="login-form-panel">
+      <form class="login-card" action="dashboard.html" method="get">
+        <div class="mobile-brand brand">
+          <span class="brand-icon"><i class="fa-solid fa-link"></i></span>
+          <span><strong>LostLink</strong><small>PKM-KC</small></span>
+        </div>
+        <span class="section-label">SELAMAT DATANG</span>
+        <h2>Masuk ke LostLink</h2>
+        <p class="muted">Gunakan akun kampus untuk melanjutkan.</p>
+        <label for="nim">NIM atau Email Kampus</label>
+        <div class="field-with-icon"><i class="fa-regular fa-user"></i><input id="nim" name="nim" type="text" placeholder="Contoh:  A1B123456" required></div>
+        <label for="password">Kata Sandi</label>
+        <div class="field-with-icon"><i class="fa-solid fa-lock"></i><input id="password" name="password" type="password" placeholder="Masukkan kata sandi" required></div>
+        <div class="login-options"><label class="remember"><input type="checkbox"> Ingat saya</label><a href="#" onclick="return false;">Lupa kata sandi?</a></div>
+        <button class="btn btn-primary btn-full" type="submit">Masuk <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="demo-note"><i class="fa-solid fa-circle-info"></i> Prototype demo: formulir ini belum memeriksa akun sungguhan.</div>
+        <p class="login-bottom">Belum punya akun? <a href="#" onclick="return false;">Hubungi admin kampus</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

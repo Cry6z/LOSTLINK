@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporkan Barang | LostLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="app-page">
+  <aside class="sidebar">
+  <a class="brand sidebar-brand" href="dashboard.html">
+    <span class="brand-icon"><i class="fa-solid fa-link"></i></span>
+    <span><strong>LostLink</strong><small>PKM-KC</small></span>
+  </a>
+  <div class="sidebar-caption">MENU UTAMA</div>
+  <nav class="side-nav">
+    <a class="NAV_DASH" href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+    <a class="NAV_KATALOG" href="katalog.html"><i class="fa-solid fa-box-open"></i> Katalog Barang</a>
+    <a class="NAV_LAPOR active" href="laporkan.html"><i class="fa-solid fa-file-circle-plus"></i> Laporkan Barang</a>
+    <a class="NAV_CARA" href="carakerja.html"><i class="fa-solid fa-diagram-project"></i> Cara Kerja</a>
+    <a class="NAV_TENTANG" href="tentang.html"><i class="fa-solid fa-circle-info"></i> Tentang Kami</a>
+  </nav>
+  <div class="sidebar-help">
+    <div class="help-icon"><i class="fa-regular fa-circle-question"></i></div>
+    <strong>Butuh bantuan?</strong>
+    <p>Hubungi admin LostLink kampus untuk bantuan laporan.</p>
+    <a href="tentang.html">Kontak Admin <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <a class="sidebar-logout" href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Keluar</a>
+</aside>
+  <main class="main-content">
+    <header class="topbar">
+      <div><span class="topbar-kicker">PORTAL MAHASISWA</span><h1>Laporkan Barang</h1></div>
+      <div class="profile-chip"><span class="avatar">M</span><span><strong>Mahasiswa</strong><small>Pengguna LostLink</small></span></div>
+    </header>
+    
+<section class="page-intro"><span class="section-label">FORM PELAPORAN</span><h2>Laporkan barang hilang atau temuan.</h2><p>Isi informasi dengan jelas agar barang lebih mudah dikenali. Kolom bertanda * wajib diisi.</p></section>
+<div class="report-page-layout">
+  <form class="form-card" action="dashboard.html" method="get">
+    <h3><i class="fa-solid fa-file-circle-plus"></i> Informasi Laporan</h3>
+    <label class="field-label">Jenis laporan *</label>
+    <div class="choice-grid"><label class="choice-card"><input type="radio" name="jenis" checked><span><i class="fa-solid fa-magnifying-glass"></i><strong>Saya kehilangan barang</strong><small>Barang milik saya hilang</small></span></label><label class="choice-card"><input type="radio" name="jenis"><span><i class="fa-solid fa-hand-holding-heart"></i><strong>Saya menemukan barang</strong><small>Saya menemukan barang</small></span></label></div>
+    <div class="form-two-col"><div><label class="field-label" for="nama">Nama barang *</label><input id="nama" required placeholder="Contoh: Laptop ASUS"></div><div><label class="field-label" for="kategori">Kategori *</label><select id="kategori" required><option value="">Pilih kategori</option><option>Elektronik</option><option>Kartu identitas</option><option>Aksesori</option><option>Botol minum</option><option>Lainnya</option></select></div><div><label class="field-label" for="lokasi">Lokasi terakhir / ditemukan *</label><input id="lokasi" required placeholder="Contoh: Perpustakaan"></div><div><label class="field-label" for="waktu">Tanggal dan waktu *</label><input id="waktu" type="datetime-local" required></div></div>
+    <label class="field-label" for="ciri">Ciri khusus barang *</label><textarea id="ciri" rows="5" required placeholder="Warna, merek, stiker, atau ciri khusus lainnya..."></textarea>
+    <label class="field-label" for="foto">Foto barang (opsional)</label><input class="file-input" id="foto" type="file" accept="image/*">
+    <label class="field-label" for="kontak">Kontak / NIM *</label><input id="kontak" required placeholder="Masukkan NIM atau kontak yang dapat dihubungi">
+    <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-paper-plane"></i> Kirim Laporan & Jalankan Smart Match</button>
+    <p class="form-footnote"><i class="fa-solid fa-circle-info"></i> Prototype ini belum menyimpan data atau menjalankan pencocokan otomatis.</p>
+  </form>
+  <aside class="report-side-card"><span class="side-card-icon"><i class="fa-solid fa-shield-halved"></i></span><h3>Tips membuat laporan</h3><ul><li>Gunakan nama barang yang jelas.</li><li>Isi lokasi dan tanggal seakurat mungkin.</li><li>Sebutkan ciri unik yang dapat diverifikasi.</li><li>Jangan mencantumkan kata sandi atau informasi rahasia.</li></ul><div class="side-warning"><i class="fa-solid fa-lightbulb"></i><span>Pastikan kepemilikan barang diverifikasi sebelum serah terima.</span></div></aside>
+</div>
+
+    <footer class="page-footer">© 2026 LostLink PKM-KC · Prototype layanan barang hilang dan temuan kampus</footer>
+  </main>
+</body>
+</html>

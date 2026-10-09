@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | LostLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="app-page">
+  <aside class="sidebar">
+  <a class="brand sidebar-brand" href="dashboard.html">
+    <span class="brand-icon"><i class="fa-solid fa-link"></i></span>
+    <span><strong>LostLink</strong><small>PKM-KC</small></span>
+  </a>
+  <div class="sidebar-caption">MENU UTAMA</div>
+  <nav class="side-nav">
+    <a class="NAV_DASH active" href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+    <a class="NAV_KATALOG" href="katalog.html"><i class="fa-solid fa-box-open"></i> Katalog Barang</a>
+    <a class="NAV_LAPOR" href="laporkan.html"><i class="fa-solid fa-file-circle-plus"></i> Laporkan Barang</a>
+    <a class="NAV_CARA" href="carakerja.html"><i class="fa-solid fa-diagram-project"></i> Cara Kerja</a>
+    <a class="NAV_TENTANG" href="tentang.html"><i class="fa-solid fa-circle-info"></i> Tentang Kami</a>
+  </nav>
+  <div class="sidebar-help">
+    <div class="help-icon"><i class="fa-regular fa-circle-question"></i></div>
+    <strong>Butuh bantuan?</strong>
+    <p>Hubungi admin LostLink kampus untuk bantuan laporan.</p>
+    <a href="tentang.html">Kontak Admin <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <a class="sidebar-logout" href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Keluar</a>
+</aside>
+  <main class="main-content">
+    <header class="topbar">
+      <div><span class="topbar-kicker">PORTAL MAHASISWA</span><h1>Dashboard</h1></div>
+      <div class="profile-chip"><span class="avatar">M</span><span><strong>Mahasiswa</strong><small>Pengguna LostLink</small></span></div>
+    </header>
+    
+<section class="welcome-banner">
+  <div class="welcome-copy"><span class="eyebrow eyebrow-yellow">SELAMAT DATANG DI LOSTLINK</span><h2>Temukan barangmu,<br><span>mulai dari sini.</span></h2><p>Kelola laporan barang hilang dan temuan melalui satu portal yang mudah digunakan.</p><a class="btn btn-yellow" href="laporkan.html"><i class="fa-solid fa-plus"></i> Buat Laporan Baru</a></div>
+  <div class="welcome-art"><div class="art-circle"><i class="fa-solid fa-box-open"></i></div><span class="art-tag tag-top"><i class="fa-solid fa-check"></i> Laporan terorganisir</span><span class="art-tag tag-bottom"><i class="fa-solid fa-magnifying-glass"></i> Cari barang</span></div>
+</section>
+<section class="stats-grid">
+  <article class="stat-card"><span class="stat-icon stat-blue"><i class="fa-solid fa-boxes-stacked"></i></span><div><p>Total Laporan</p><strong>150+</strong><small>Data contoh prototype</small></div></article>
+  <article class="stat-card"><span class="stat-icon stat-yellow"><i class="fa-solid fa-magnifying-glass"></i></span><div><p>Barang Hilang</p><strong>48</strong><small>Menunggu kecocokan</small></div></article>
+  <article class="stat-card"><span class="stat-icon stat-green"><i class="fa-solid fa-circle-check"></i></span><div><p>Barang Ditemukan</p><strong>102</strong><small>Sudah dilaporkan</small></div></article>
+</section>
+<section class="content-section">
+  <div class="section-heading"><div><span class="section-label">AKSES CEPAT</span><h2>Mau melakukan apa?</h2><p>Pilih menu untuk membuka halaman yang kamu perlukan.</p></div></div>
+  <div class="shortcut-grid">
+    <a class="shortcut-card" href="katalog.html"><span class="shortcut-icon blue-soft"><i class="fa-solid fa-box-open"></i></span><h3>Katalog Barang</h3><p>Lihat daftar barang hilang dan temuan.</p><span class="shortcut-link">Buka katalog <i class="fa-solid fa-arrow-right"></i></span></a>
+    <a class="shortcut-card" href="laporkan.html"><span class="shortcut-icon yellow-soft"><i class="fa-solid fa-file-circle-plus"></i></span><h3>Laporkan Barang</h3><p>Buat laporan barang hilang atau yang kamu temukan.</p><span class="shortcut-link">Buat laporan <i class="fa-solid fa-arrow-right"></i></span></a>
+    <a class="shortcut-card" href="carakerja.html"><span class="shortcut-icon green-soft"><i class="fa-solid fa-wand-magic-sparkles"></i></span><h3>Cara Kerja</h3><p>Pahami alur pencocokan dan verifikasi barang.</p><span class="shortcut-link">Pelajari alurnya <i class="fa-solid fa-arrow-right"></i></span></a>
+    <a class="shortcut-card" href="tentang.html"><span class="shortcut-icon purple-soft"><i class="fa-solid fa-circle-info"></i></span><h3>Tentang LostLink</h3><p>Kenali tujuan proyek dan kontak admin.</p><span class="shortcut-link">Selengkapnya <i class="fa-solid fa-arrow-right"></i></span></a>
+  </div>
+</section>
+<section class="content-section">
+  <div class="section-heading"><div><span class="section-label">LAPORAN TERBARU</span><h2>Barang yang baru dilaporkan</h2></div><a class="text-link" href="katalog.html">Lihat katalog <i class="fa-solid fa-arrow-right"></i></a></div>
+  <div class="recent-list">
+    <a href="katalog.html" class="recent-item"><span class="recent-item-icon blue-soft"><i class="fa-solid fa-id-card"></i></span><span class="recent-item-main"><strong>KTM Mahasiswa</strong><small>Gedung A · 05 Okt 2026</small></span><span class="status-pill status-lost">Hilang</span></a>
+    <a href="katalog.html" class="recent-item"><span class="recent-item-icon yellow-soft"><i class="fa-solid fa-laptop"></i></span><span class="recent-item-main"><strong>Laptop ASUS</strong><small>Perpustakaan · 04 Okt 2026</small></span><span class="status-pill status-found">Ditemukan</span></a>
+    <a href="katalog.html" class="recent-item"><span class="recent-item-icon green-soft"><i class="fa-solid fa-bottle-water"></i></span><span class="recent-item-main"><strong>Tumbler Hydro Flask</strong><small>Kantin · 02 Okt 2026</small></span><span class="status-pill status-found">Ditemukan</span></a>
+  </div>
+</section>
+
+    <footer class="page-footer">© 2026 LostLink PKM-KC · Prototype layanan barang hilang dan temuan kampus</footer>
+  </main>
+</body>
+</html>

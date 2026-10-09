@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Barang | LostLink</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="app-page">
+  <aside class="sidebar">
+  <a class="brand sidebar-brand" href="dashboard.html">
+    <span class="brand-icon"><i class="fa-solid fa-link"></i></span>
+    <span><strong>LostLink</strong><small>PKM-KC</small></span>
+  </a>
+  <div class="sidebar-caption">MENU UTAMA</div>
+  <nav class="side-nav">
+    <a class="NAV_DASH" href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+    <a class="NAV_KATALOG active" href="katalog.html"><i class="fa-solid fa-box-open"></i> Katalog Barang</a>
+    <a class="NAV_LAPOR" href="laporkan.html"><i class="fa-solid fa-file-circle-plus"></i> Laporkan Barang</a>
+    <a class="NAV_CARA" href="carakerja.html"><i class="fa-solid fa-diagram-project"></i> Cara Kerja</a>
+    <a class="NAV_TENTANG" href="tentang.html"><i class="fa-solid fa-circle-info"></i> Tentang Kami</a>
+  </nav>
+  <div class="sidebar-help">
+    <div class="help-icon"><i class="fa-regular fa-circle-question"></i></div>
+    <strong>Butuh bantuan?</strong>
+    <p>Hubungi admin LostLink kampus untuk bantuan laporan.</p>
+    <a href="tentang.html">Kontak Admin <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <a class="sidebar-logout" href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Keluar</a>
+</aside>
+  <main class="main-content">
+    <header class="topbar">
+      <div><span class="topbar-kicker">PORTAL MAHASISWA</span><h1>Katalog Barang</h1></div>
+      <div class="profile-chip"><span class="avatar">M</span><span><strong>Mahasiswa</strong><small>Pengguna LostLink</small></span></div>
+    </header>
+    
+<section class="page-intro"><span class="section-label">KATALOG LOST & FOUND</span><h2>Temukan barang yang kamu cari.</h2><p>Jelajahi contoh laporan barang hilang dan barang yang ditemukan di lingkungan kampus.</p></section>
+<div class="catalog-toolbar"><div class="field-with-icon catalog-search"><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Cari nama barang..."></div><select aria-label="Filter kategori"><option>Semua kategori</option><option>Elektronik</option><option>Kartu identitas</option><option>Aksesori</option><option>Botol minum</option></select><select aria-label="Filter status"><option>Semua status</option><option>Hilang</option><option>Ditemukan</option></select></div>
+<div class="notice-box"><i class="fa-solid fa-circle-info"></i><span>Data katalog ini merupakan contoh tampilan prototype. Fitur pencarian dan filter belum terhubung ke database.</span></div>
+<div class="catalog-grid">
+  <article class="catalog-card"><div class="catalog-art art-blue"><i class="fa-solid fa-id-card"></i><span class="status-pill status-lost">Hilang</span><b>92% Match</b></div><div class="catalog-card-body"><small>KARTU IDENTITAS</small><h3>KTM Mahasiswa</h3><p><i class="fa-regular fa-calendar"></i> 05 Okt 2026</p><p><i class="fa-solid fa-location-dot"></i> Gedung A</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+  <article class="catalog-card"><div class="catalog-art art-yellow"><i class="fa-solid fa-laptop"></i><span class="status-pill status-found">Ditemukan</span><b>89% Match</b></div><div class="catalog-card-body"><small>ELEKTRONIK</small><h3>Laptop ASUS</h3><p><i class="fa-regular fa-calendar"></i> 04 Okt 2026</p><p><i class="fa-solid fa-location-dot"></i> Perpustakaan</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+  <article class="catalog-card"><div class="catalog-art art-yellow"><i class="fa-solid fa-key"></i><span class="status-pill status-lost">Hilang</span><b>87% Match</b></div><div class="catalog-card-body"><small>AKSESORI</small><h3>Kunci Motor Honda</h3><p><i class="fa-regular fa-calendar"></i> 03 Okt 2026</p><p><i class="fa-solid fa-location-dot"></i> Parkiran</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+  <article class="catalog-card"><div class="catalog-art art-green"><i class="fa-solid fa-bottle-water"></i><span class="status-pill status-found">Ditemukan</span><b>95% Match</b></div><div class="catalog-card-body"><small>BOTOL MINUM</small><h3>Tumbler Hydro Flask</h3><p><i class="fa-regular fa-calendar"></i> 02 Okt 2026</p><p><i class="fa-solid fa-location-dot"></i> Kantin</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+  <article class="catalog-card"><div class="catalog-art art-blue"><i class="fa-solid fa-headphones"></i><span class="status-pill status-lost">Hilang</span><b>84% Match</b></div><div class="catalog-card-body"><small>ELEKTRONIK</small><h3>Headset Bluetooth</h3><p><i class="fa-regular fa-calendar"></i> 01 Okt 2026</p><p><i class="fa-solid fa-location-dot"></i> Gedung B</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+  <article class="catalog-card"><div class="catalog-art art-purple"><i class="fa-solid fa-wallet"></i><span class="status-pill status-found">Ditemukan</span><b>91% Match</b></div><div class="catalog-card-body"><small>DOMPET</small><h3>Dompet Kulit Hitam</h3><p><i class="fa-regular fa-calendar"></i> 30 Sep 2026</p><p><i class="fa-solid fa-location-dot"></i> Gedung C</p><a href="laporkan.html" class="btn btn-outline btn-full">Laporkan kecocokan</a></div></article>
+</div>
+
+    <footer class="page-footer">© 2026 LostLink PKM-KC · Prototype layanan barang hilang dan temuan kampus</footer>
+  </main>
+</body>
+</html>
